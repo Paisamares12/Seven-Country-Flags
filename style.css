@@ -1,0 +1,364 @@
+body {
+    background: #FC5C7D; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #6A82FB, #FC5C7D); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #6A82FB, #FC5C7D); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    font-size: 20px;
+}
+
+#title{
+    text-align: center;
+    color: white;
+    font-family: montserrat, sans-serif;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.container{
+    position: relative;
+}
+
+.flag-container{
+    position: absolute;
+    display: grid;
+    place-items: center;
+    border: 1px solid black;
+    box-shadow: #00205b 1px 1px 1px;
+    padding: 10px;
+}
+
+.flag-1{
+    background-color: #da291c;
+    height: 70px;
+    width: 100px;
+    position: relative;
+}
+
+.flag-1::after{
+    content: "";
+    position: absolute;
+    height: 40px;
+    width: 10px;
+    left: 45px;
+    top: 15px;
+    background-color: #ffffff;
+}
+.flag-1::before{
+    content: "";
+    position: absolute;
+    height: 10px;
+    width: 40px;
+    left: 30px;
+    top: 30px;
+    background-color: #ffffff;
+}
+
+.flag-2{
+    position: relative;
+    background-color: #0d5eaf;
+    height: 70px;
+    width: 100px;
+}
+
+.flag-2::after{
+    content: "";
+    position: absolute;
+    height: 42px;
+    width: 11%;
+    left: 15px;
+    top: 0;
+    background-color: #ffffff;
+}
+
+.flag-2::before{
+    content: "";
+    position: absolute;
+    height: 11%;
+    width: 50%;
+    left: 0;
+    top: 15px;
+    background-color: #ffffff;
+}
+
+.stripes-2{
+    position: absolute;
+    background-color: #ffffff;
+    height: 11%;
+    width: 100%;
+    bottom: 11%;
+}
+
+.stripes-2::after{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    bottom: 15px;
+    background-color: #ffffff;
+}
+
+.stripes-2::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 50%;
+    left: 50%;
+    bottom: 30px;
+    background-color: #ffffff;
+}
+
+.stripes-1{
+    position: absolute;
+    background-color: #ffffff;
+    height: 10%;
+    width: 50%;
+    top: 11%;
+    left: 50%;
+}
+
+.flag-3{
+    position: relative;
+    background-color: #ba0c2f;
+    height: 70px;
+    width: 100px;
+}
+
+.flag-3::after{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 20%;
+    background-color: #ffffff;
+    left: 20px;
+}
+
+.flag-3::before{
+    content: "";
+    position: absolute;
+    height: 20px;
+    width: 100%;
+    background-color: #ffffff;
+    top: 26px;
+}
+
+.stripes-3{
+    position: absolute;
+    background-color: #00205b;
+    height: 100%;
+    width: 10%;
+    left: 25px;
+    z-index: 3;
+}
+
+.stripes-3::after{
+    content: "";
+    position: absolute;
+    height: 10px;
+    width: 100px;
+    top: 30px;
+    left: -25px;
+    background-color: #00205b;
+    z-index: 4;
+}
+.stripes-4{
+    position: absolute;
+    background-color: #dc1e35;
+    height: 100%;
+    width: 10%;
+    left: 25px;
+    z-index: 3;
+
+}
+
+.stripes-4::after{
+    content: "";
+    position: absolute;
+    height: 10px;
+    width: 100px;
+    top: 30px;
+    left: -25px;
+    background-color: #dc1e35;
+    z-index: 4;
+}
+
+.flag-4{
+    position: relative;
+    background-color: #d7141a;
+    height: 70px;
+    width: 100px;
+}
+
+.flag-4::after{
+    content: "";
+    position: absolute;
+    height: 50%;
+    width: 100%;
+    background-color: #ffffff;
+    top: 0;
+}
+
+.triangle{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    clip-path: polygon(50% 50%, 0 0, 0 100%);
+    background-color: #11457e;
+    z-index: 3;
+}
+
+.flag-5{
+    position: relative;
+    background-color: #ffffff;
+    height: 70px;
+    width: 100px;
+    z-index: 1;
+}
+
+.flag-5::after{
+    content: "";
+    position: absolute;
+    height: 20%;
+    width: 100%;
+    bottom: 0;
+    background-color: #0038b8;
+}
+
+.flag-5::before{
+    content: "";
+    position: absolute;
+    height: 20%;
+    width: 100%;
+    top: 0;
+    background-color: #0038b8;
+}
+
+.triangle-2{
+    position: absolute;
+    width: 40%;
+    height: 50%;
+    top: 22%;
+    left: 30%;
+    clip-path: polygon(50% 0, 0 100%, 100% 100%);
+    background-color: #0038b8;
+    z-index: 3;
+}
+.triangle-2::after{
+    content: "";
+    position: absolute;
+    width: 70%;
+    height: 70%;
+    top: 7px;
+    left: 6px;
+    clip-path: polygon(50% 0, 0 100%, 100% 100%);
+    background-color: #ffffff;
+    z-index: 2;
+}
+
+.triangle-3{
+    position: absolute;
+    width: 40%;
+    height: 50%;
+    top: 35%;
+    left: 30%;
+    clip-path: polygon(50% 100%, 0 0, 100% 0);
+    background-color: #0038b8;
+    z-index: 3;
+}
+
+.triangle-3::after{
+    content: "";
+    position: absolute;
+    width: 70%;
+    height: 70%;
+    top: 3px;
+    left: 6px;
+    clip-path: polygon(50% 100%, 0 0, 100% 0);
+    background-color: #ffffff;
+    z-index: 2;
+}
+
+.stripes-5{
+    position: absolute;
+    background-color: #0038b8;
+    height: 13px;
+    width: 3px;
+    left: 41px;
+    top: 25px;
+    transform: rotate(35deg);
+    z-index: 3;
+}
+
+.stripes-6{
+    position: absolute;
+    background-color: #0038b8;
+    height: 13px;
+    width: 3px;
+    left: 56px;
+    top: 25px;
+    transform: rotate(145deg);
+    z-index: 3;
+}
+
+.stripes-7{
+    position: absolute;
+    background-color: #0038b8;
+    height: 3px;
+    width: 13px;
+    left: 40px;
+    top: 47px;
+    z-index: 3;
+}
+
+.flag-6{
+    position: relative;
+    background-color: #007749;
+    height: 70px;
+    width: 100px;
+}
+
+.triangle-4{
+    position: absolute;
+    width: 60%;
+    height: 100%;
+    clip-path: polygon(100% 50%, 0 100%, 0 0);
+    background-color: #ffb81c;
+    z-index: 3;
+}
+.triangle-4::after{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    right: 20px;
+    clip-path: polygon(100% 50%, 0 100%, 0 0);
+    background-color: black;
+}
+.triangle-5{
+    position: absolute;
+    width: 60%;
+    height: 100%;
+    right: 0;
+    clip-path: polygon(0 50%, 100% 100%, 100% 0);
+    background-color: #ffb81c;
+    z-index: 3;
+}
+
+.triangle-5::after{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 20px;
+    clip-path: polygon(0 50%, 100% 100%, 100% 0);
+    background-color: black;
+}
+
+.container{
+    left:13%;
+}
+
+.name{
+    text-align: center;
+    color: white;
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.2rem;
+}
